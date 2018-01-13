@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Day 2 Activity</title>
+</head>
+<body>
+<a href="../index.html">Home</a>
+
+<h1>Multipage Sites</h1>
+
+<p>When creating more than one page on your website, relative URLs can be used to link to pages within your own website. Relative URLs provide a shorthand way of telling the browser where to
+find your files.</p>
+
+<h2>Same Folder</h2>
+<p>If all of the files in your site are in one folder, you simply use the
+file name for that page.</p>
+
+
+<p> For example, to link to a contact page from the homepage (index.html)the html is:
+<pre>&lt;a href="contact.html">Contact&lt;/a>&lt;/p></pre>
+
+<h2>Different folder</h2>
+
+<p>If your site is organized into separate folders (or directories), you need to tell the browser a bit of extra information about how to get from the page it is currently on to the page that you are linking to.</p>
+
+<h3>Child Folder</h3>
+
+<p>A child folder, is a sub folder of the main directory. To access a file from child folder, use the name of the child folder, followed by a forward slash, then the file name.</p>
+
+<p>On a website about different countries of Africa there are a number of different folders representing different countries. In each country folder, there is a file about food, music, and culture. To link to a page about music that is in a folder called Uganda from the homepage (main or root index.html) the html would be: <pre>&lt;a href="uganda/food.html">Music of Uganda&lt;/a>&lt;/p></pre>
+
+<h3>Parent Folder</h3>
+
+<p>A parent folder, a level above a child folder. To access a file in the parent folder, use ../ to indicate the folder above the current one, then follow it with the file name.</p>
+
+<p>For example, to link to the homepage with a list of all the African countries(index.html) from the Ugandan music page the html is: <pre>&lt;a href="../index.html"> Home&lt;/a></pre>
+
+
+<p>Let's try and create a multipage site: <a href="activity_2/index.html">Activity 2</a></p>
+
+</body>
+</html>
