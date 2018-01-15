@@ -1,0 +1,192 @@
+
+<html>
+<head>
+<title>Glossary</title>
+</head>
+
+<body>
+
+
+<h1>New Elements</h1>	
+
+<h2>Semantic Elements</h2>
+
+<p>Semantic Elements give meaning to the document. Below are some examples.</p>
+<ol>
+
+<li><h3>Article</h3></li>
+<p>The article tag defines an article. The &lt;article> element specifies independent, self-contained content.
+An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.
+Examples of where an &lt;article> element can be used:&lt;/article>
+<ul>
+<li>Forum post</li>
+<li>Blog post</li>
+<li>Newspaper article</li>
+</ul></p>
+<pre>
+&lt;article>
+  &lt;h1>What Does WWF Do?&lt;/h1>
+  &lt;p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.&lt;/p>
+&lt;/article>
+</pre>
+
+<li><h3>Footer</h3></li>
+
+<p>Defines a footer for a document or section</p>
+<pre>
+&lt;footer>
+	&lt;p>Posted by: Claire Kearney-Volpe&lt;/p>
+	&lt;p>Contact information: 
+	&lt;a href="mailto:someone@example.com">someone@example.com&lt;/a>.&lt;/p>
+&lt;/footer>
+</pre>
+
+<li><h3>Section</h3> </li> 
+<p>Defines different sections on a site</p>
+<pre>
+&lt;section>
+  &lt;h1>WWF<&lt;/h1>
+  &lt;p>The World Wide Fund for Nature (WWF) is....&lt;/p>
+&lt;/section>
+</pre>
+
+<li><h3>Navigation</h3></li>
+<p>The navigation region defines navigation links</p>
+<pre>
+&lt;nav role="navigation">
+  &lt;a href="about.html">About&lt;/a> 
+  &lt;a href="contact.html">Contact&lt;/a> 
+  &lt;a href="faq.html">Freaquently asked questions&lt;/a> 
+&lt;/nav>
+</pre>
+</ol>
+
+<h2>Non-semantic Elements:</h2>
+
+<ol>
+<li><h3>Audio</h3></li>
+<pre>
+Defines sound content
+&lt;audio controls>
+  &lt;source src="horse.ogg" type="audio/ogg">
+  &lt;source src="horse.mp3" type="audio/mpeg">
+&lt;/audio>
+</pre>
+
+<li><h3>Line Break</h3></li>
+<p>the br tag defines a single line break and has no closing tag</p>
+<pre>&lt;br></pre>
+
+<li><h3>Button</h3> </li>
+
+<p>The button element defines a clickable button.</p>
+
+<pre>&lt;button onclick="alert('button activated')">native HTML&lt;/button></pre>
+
+
+<li><h3>Images</h3></li>
+
+<p>Images can be rendered using links to URL images, or image files. They do not need a closing tag and should always include an alt attribute.</p>
+<pre>&lt;img src="smiley.gif" alt="Smiley face" height="42" width="42"></pre>
+
+
+
+<li><h3>Forms</h3></li>
+<p>Forms define HTML forms for user input. Labels are used in forms to define a label for an input element. The input tag specifies an input field where the user can enter data. The input varies depending on the type attribute that it is given. 
+<ul>
+<li><p>The example below defines a radio button form that allows users to select their gender:</p></li>
+<pre>
+&lt;form action="/action_page.php">
+  &lt;label for="male">Male&lt;/label>
+  &lt;input type="radio" name="gender" id="male" value="male">&lt;br>
+  &lt;label for="female">Female&lt;/label>
+  &lt;input type="radio" name="gender" id="female" value="female">&lt;br>
+  &lt;label for="other">Other</label>
+  &lt;input type="radio" name="gender" id="other" value="other">&lt;br>&lt;br>
+  &lt;input type="submit" value="Submit">
+&lt;/form>
+</pre>
+<li><p>The example below defines a text field form that allows users to type their first and last names.</p></li>
+<pre>&lt;form action="/action_page.php">
+  First name: &lt;input type="text" name="fname">&lt;br>
+  Last name: &lt;input type="text" name="lname">&lt;br>
+  &lt;input type="submit" value="Submit">
+&lt;/form>
+
+</pre>
+</ul>
+
+<li><h3>dropdowns menu</h3></li>
+<p> a dropdown list allows users to select from options in a drop-down focusable list
+<pre>
+&lt;select>
+  &lt;option value="volvo">Volvo&lt;/option>
+  &lt;option value="saab">Saab&lt;/option>
+  &lt;option value="opel">Opel&lt;/option>
+  &lt;option value="audi">Audi&lt;/option>
+&lt;/select>
+</pre>
+
+<li><h3>Tables</h3></li>
+<p>The &lt;table> tag defines an HTML table. An HTML table consists of the &lt;table> tag and one or more &lt;tr>, &lt;th>, and &lt;td> tags. The &lt;tr> element defines a table row, the &lt;th> element defines a table header, and the &lt;td> element defines a table cell.</p>
+<pre>
+&lt;table>
+  &lt;tr>
+    &lt;th>Month&lt;/th>
+    &lt;th>Savings&lt;/th>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>January&lt;/td>
+    &lt;td>$100&lt;/td>
+  &lt;/tr>
+&lt;/table>
+</pre>
+
+<li><h3>Span</h3></li>
+<p>The span tags are used to group inline-elements in a document and provides a way to add a hook to a part of a text or a part of a document.</p>
+<pre>
+&lt;p>My mother has &lt;span style="color:blue">blue&lt;/span> eyes.&lt;/p>
+</pre>
+
+
+<li><h3>Divs</h3></li>
+<p>The div tag defines a division or a section in an HTML document. The div tag is used to group block-elements to format them with CSS.</p>
+<pre>
+&lt;div style="color:#0000FF">
+  &lt;h3>This is a heading</h3>
+  &lt;p>This is a paragraph.</p>
+&lt;/div>
+</pre>
+
+
+<li><h3>Script Tags </h3><li>
+<p>Script tags define a client-side script. You can use these to add javascript right in your html file.</p> 
+<pre>
+&lt;script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+&lt;/script>
+&lt;/pre>
+</pre>
+
+
+<li><h3>Style</h3></li>
+<p> Style tags define the style information for a document and allow you to add CSS changes right in your html file.</p>
+<pre>
+&lt;html>
+&lt;head>
+&lt;style>
+h1 {color:red;}
+p {color:blue;}
+&lt;/style>
+</pre>
+
+
+</ol>
+
+</body>
+</html>
+
+
+
+
