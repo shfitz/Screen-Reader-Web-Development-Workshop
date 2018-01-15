@@ -13,18 +13,26 @@
 </head>
 
 <body>
-    <h1> all about css </h1>
+<a href="../index.html">Home</a>
+    <h1> All About CSS </h1>
     <p>CSS stands for Cascading Style Sheet. If HTML is the skeleton of your webpage, defining structure, CSS is the skin. It describes the visual style of a page. The syntax of the language is different from HTML and there are a number of different ways to use it. You can link to an external CSS file, you can write CSS in the <em>head</em> of your page, or you can write CSS as an attribute of an element.</p>
-    <h2>Ways of using CSS</h2>
+    <h2>Ways of using CSS: Selectors</h2>
     <p>CSS can be used to style a page in four different ways.
         <ol>
-            <li><strong>Element selector</strong> : you can apply a style to every element of a paricular type. For ecample, you can have the text in every paragraph tag be colored purple.</li>
+            <li><strong>Element selector</strong>: You can apply a style to every element of a paricular type. For example, you can have the text in every paragraph tag be colored purple:</li>
+            <pre>
+                p{
+                color:purple;
+            }
+            </pre>
 
-            <li><strong>Pseudo class</strong> : you can apply a style to elements When an ation happens. For example, when you select a link, you can italicize the text.</li>
+            <li><strong>Class</strong>: You can apply visual style to a specific html elements by adding the class attribute. You may call your class by any name, as an example, you can write class attributes like this: class="moving". Classes allow you to target specific elements and modify them. This is often used with the <em>div</em> element for layout purposes. 
 
-            <li><strong>Class selector</strong> : you can apply a style to a specific <em>class</em>. This allows you to target specific tags and do things differenly. This is often used with the <em>div</em> element for layout purposes.</li>
 
-            <li><strong>ID selector</strong> : An ID is a unique identifier for an element. You should only apply an ID to one element in your page. It is useful for makeing dynamic pages and incorporating with Javascript.</li>
+            <li><strong>ID</strong> : You can also apply visual style to a specific html elements by adding the I D attribute. I Ds give you the ability to change style and content using Javascript. I Ds are useful for adressing specific elements with unique I D s and therefore, you should only use an I D once.</li>
+
+            
+            <li><strong>Pseudo class</strong> : you can apply a style to elements when an action happens. For example, when you select a link, you can italicize the text.</li>
 
         </ol>
     </p>
@@ -51,7 +59,7 @@ border-style : dashed ;
 border-width : thin ;
 }
 </pre>
-    <br />
+    <br>
     <a href="02_design_tips.html">Design tips</a>
 </body>
 
