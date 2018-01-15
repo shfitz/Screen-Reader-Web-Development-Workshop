@@ -22,6 +22,65 @@
 
 <p> Here is more text, this time with an <span class="highlight">inline tag</span> that doesn't change the way the text around it is positioned, but it does change the way the text is rendered and appears on screen. </p>
 
-</body>
+    
+    <h2> html code for this page </h2>
+<pre>
+<code>
+&#x3C;html&#x3E;
+&#x3C;head&#x3E;
+&#x3C;title&#x3E; Introduction to CSS &#x3C;/title&#x3E;
+&#x3C;link href=&#x22;style.css&#x22; rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; /&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+&#x3C;div class=&#x22;navigation&#x22;&#x3E;
+&#x3C;a href=&#x22;home.html&#x22;&#x3E; home &#x3C;/a&#x3E; | &#x3C;a href=&#x22;music.html&#x22;&#x3E; music &#x3C;/a&#x3E; | &#x3C;a href=&#x22;food.html&#x22;&#x3E; food &#x3C;/a&#x3E; | &#x3C;a href=&#x22;culture.html&#x22;&#x3E; culture &#x3C;/a&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;h1&#x3E; This whole page is in a san serif font! &#x3C;/h1&#x3E;
+&#x3C;p id=&#x22;info&#x22;&#x3E; This text in a p tag with a unique id. It&#x27;s possible to have an id tag without an associated CSS selector, though this one changes the background color of the text.&#x3C;/p&#x3E;
+&#x3C;p&#x3E; Here is more text, this time with an &#x3C;span class=&#x22;highlight&#x22;&#x3E;inline tag&#x3C;/span&#x3E; that doesn&#x27;t change the way the text around it is positioned, but it does change the way the text is rendered and appears on screen. &#x3C;/p&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+</code>
+</pre>
+        <h2> CSS code for this page </h2>
+    <p> the CSS code for this page is in a separate file called style.css </p>
+<pre>
+<code>
+/* This is a CSS comment. It begins with a slash, followed by an *, then the content you want to comment out. It ends with an * follwed by a slash */
+/* Element Selector : applies the style to all instances of the named element */
+body {
+font-family : "Verdana", sans-serif ;
+background-color : deepskyblue ;
+}
+a {
+text-decoration : none ;
+color : black ;
+}
+/* Pseudo class : defines special state of the described element*/
+a:hover {
+text-decoration : underline ;
+}
+/* Class Selector : a named class you can apply to elements */
+.navigation {
+text-align : center ;
+}
+.highlight {
+border : 1px solid black ;
+background-color : greenyellow ;
+}
+/* ID Selector : a special ID you can give to one element in your page */
+#info {
+margin : 0 auto ;
+text-align : left ;
+background-color : rgba(100, 100, 100, 0.5);
+border-style : dashed ;
+border-color : floralwhite;
+}
+</code>
+</pre>
+    
+    
+    </body>
 
 </html>
+
