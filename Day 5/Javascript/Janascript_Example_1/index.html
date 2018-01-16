@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript example</title>
+    <style type="text/css">
+        body{
+            font-family: sans-serif;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <h1>Button color changer example</h1>
+    <p> There are three buttons on this page. When you select one it will change the background color and let you know about it. </p>
+
+    <button type="button" onclick="red()" aria-label="change background color to red">change background color to red</button>
+    <button type="button" onclick="green()" aria-label="change background color to green">change background color to green</button>
+    <button type="button" onclick="blue()" aria-label="change background color to blue">change background color to blue</button>
+
+    <p aria-live="assertive" id="color">background is now white</p>
+
+    <script>
+        function red() {
+            document.body.style.backgroundColor = "red";
+            document.getElementById("color").innerHTML = "background is now red!";
+        }
+
+        function green() {
+            document.body.style.backgroundColor = "green";
+            document.getElementById("color").innerHTML = "background is now green!";
+
+        }
+
+        function blue() {
+            document.body.style.backgroundColor = "blue";
+            document.getElementById("color").innerHTML = "background is now blue!";
+
+        }
+
+    </script>
+    
+    <br />
+    <h2>Code for this page</h2>
+    <pre><code>
+&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html&#x3E;
+&#x3C;head
+&#x3C;title&#x3E; Javascript example &#x3C;/title&#x3E;
+&#x3C;style type=&#x22;text/css&#x22;&#x3E;
+body {
+font-family : sans-serif ;
+}
+&#x3C;/style&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+&#x3C;h1&#x3E; Button color changer example &#x3C;/h1&#x3E;
+&#x3C;p&#x3E; There are three buttons on this page. When you select one it will change the background color and let you know about it. &#x3C;/p&#x3E;
+&#x3C;button type=&#x22;button&#x22; onclick=&#x22;red()&#x22; aria-label=&#x22;change background color to red&#x22;&#x3E; change background color to red &#x3C;/button&#x3E;
+&#x3C;button type=&#x22;button&#x22; onclick=&#x22;green()&#x22; aria-label=&#x22;change background color to green&#x22;&#x3E; change background color to green &#x3C;/button&#x3E;
+&#x3C;button type=&#x22;button&#x22; onclick=&#x22;blue()&#x22; aria-label=&#x22;change background color to blue&#x22;&#x3E; change background color to blue &#x3C;/button&#x3E;
+&#x3C;p aria-live=&#x22;assertive&#x22; id=&#x22;color&#x22;&#x3E; background is now white &#x3C;/p&#x3E;
+&#x3C;script&#x3E;
+function red() {
+document.body.style.backgroundColor = &#x22;red&#x22; ;
+document.getElementById(&#x22;color&#x22;).innerHTML = &#x22;background is now red!&#x22; ;
+}
+function green() {
+document.body.style.backgroundColor = &#x22;green&#x22; ;
+document.getElementById(&#x22;color&#x22;).innerHTML = &#x22;background is now green!&#x22; ;
+}
+function blue() {
+document.body.style.backgroundColor = &#x22;blue&#x22; ;
+document.getElementById(&#x22;color&#x22;).innerHTML = &#x22;background is now blue!&#x22; ;
+}
+&#x3C;/script&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+    
+    
+    </code></pre>
+
+</body>
+</html>
