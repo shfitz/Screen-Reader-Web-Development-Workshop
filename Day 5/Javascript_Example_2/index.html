@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Example 2: Adding a word to your page</title>
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    
+    <h1>Javascript Example 2</h1>
+    
+    <span>Enter a word into the edit field and use the submit button. Once you submit, your word will be added to the page!</span><br><br>
+    <label id="inputlabel" for="value">Type anything here</label>
+    
+    <input id="input_text" type="text" name="words" aria-labelledby="inputlabel input_text"/>
+    
+    <button type="submit" name="submit" value="Submit" class="input-submit" onclick="addWord()">Submit</button>
+   
+    <p aria-live="assertive" id="input-word">Waiting for your input</p>
+    
+ 
+
+  </body>
+</html>
