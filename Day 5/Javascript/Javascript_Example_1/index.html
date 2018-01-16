@@ -13,30 +13,33 @@
 
 <body>
 
-    <h1>Button color changer example</h1>
+    <h1>Color Changer Example</h1>
+    
     <p> There are three buttons on this page. When you select one it will change the background color and let you know about it. </p>
 
-    <button type="button" onclick="red()" aria-label="change background color to red">change background color to red</button>
-    <button type="button" onclick="green()" aria-label="change background color to green">change background color to green</button>
-    <button type="button" onclick="blue()" aria-label="change background color to blue">change background color to blue</button>
+    <p aria-live="assertive" id="color">The background of this page is white</p>
 
-    <p aria-live="assertive" id="color">background is now white</p>
+    <button onclick="red()">change background color to red</button>
+    <button onclick="green()">change background color to green</button>
+    <button onclick="blue()">change background color to blue</button>
+
+ 
 
     <script>
         function red() {
             document.body.style.backgroundColor = "red";
-            document.getElementById("color").innerHTML = "background is now red!";
+            document.getElementById("color").innerHTML = "The background is red now!";
         }
 
         function green() {
             document.body.style.backgroundColor = "green";
-            document.getElementById("color").innerHTML = "background is now green!";
+            document.getElementById("color").innerHTML = "The background is green now!";
 
         }
 
         function blue() {
             document.body.style.backgroundColor = "blue";
-            document.getElementById("color").innerHTML = "background is now blue!";
+            document.getElementById("color").innerHTML = "The background is blue now!";
 
         }
 
