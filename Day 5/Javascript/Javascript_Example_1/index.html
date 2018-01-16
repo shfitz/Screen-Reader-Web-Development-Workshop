@@ -17,13 +17,12 @@
     
     <p> There are three buttons on this page. When you select one it will change the background color and let you know about it. </p>
 
-    <p aria-live="assertive" id="color">The background of this page is white</p>
 
-    <button onclick="red()">change background color to red</button>
-    <button onclick="green()">change background color to green</button>
-    <button onclick="blue()">change background color to blue</button>
+    <button onclick="red()" type="button" aria-label="submit" >change background color to red</button>
+    <button onclick="green()" type="button" aria-label="submit" >change background color to green</button>
+    <button onclick="blue()" type="button" aria-label="submit" >change background color to blue</button>
 
- 
+     <p aria-live="assertive" id="color">The background of this page is white</p>
 
     <script>
         function red() {

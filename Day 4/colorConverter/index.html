@@ -9,14 +9,14 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body style="font-family: ">
     
     
     <h1>RGB color generator</h1>
     <span>Enter three RGB values between 0 and 255 separated by commas and select the Submit button to convert to a color name. For example, entering 255 comma 255 comma 255 will convert to white</span><br><br>
     <label id="rgb" for="value">RGB values</label>
-    <input id="value"type="text" name="color" class="rgbinput-color" aria-labelledby="rgb value"/>
-    <button type="submit" name="submit" value="Submit Value" class="input-submit"onclick="rgbCalculateColor()" >Submit Value</button>
+    <input id="value" type="text" name="color" class="rgbinput-color" aria-labelledby="rgb value"/>
+    <button type="submit" name="submit" value="Submit Value" class="input-submit" onclick="rgbCalculateColor()" >Submit Value</button>
     <p aria-live="assertive" class="input-color-name">NaN</p>
     <div class="input-color-box color-box"></div>
 
