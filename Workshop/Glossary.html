@@ -1,0 +1,283 @@
+
+<html>
+<head>
+<title>Complete Course Glossary</title>
+</head>
+
+<body>
+
+<a href="index.html">Home</a>
+
+<h1>Complete Course Glossary</h1>	
+
+<h2>Basic Shell for HTML</h2>
+<pre>
+ &lt;html>
+  &lt;head>
+    &lt;title>  &lt;title>
+  &lt;/head>
+  &lt;body>
+  &lt;/body>
+ &lt;/html>
+</pre>
+
+<h2>Elements That We Have Covered:</h2>
+
+<ol>
+
+
+<li><h3>Paragraph</h3></li>
+        <code>  
+          &lt;p&gt;Paragraph text goes here&lt;/p&gt;
+        </code>
+
+     <li><h3>Headings (h1-h6)</h3></li>
+
+     <p>HTML has six different kinds of <em>headings</em> to structure text on a page. h1 tags are for top level items, like the title of a page. You only want to use this once per page.h2-h6 headings describe a different level of content. You can use these as much and as often as you like, but they should follow in order, that is, h3 will come under h2, and h2 will come under h1. your screen reader identifies each level as living under the one above it, so it's important to keep these structured.</p>
+
+        <code>  
+          &lt;h1&gt;This is a top level heading&lt;/h1&gt;<br>
+          &lt;h2&gt;This is a heading level 2&lt;/h2&gt; <br> 
+          &lt;h3&gt;This is a heading level 3&lt;/h3&gt; <br> 
+          &lt;h4&gt;This is a heading level 4&lt;/h4&gt; <br> 
+          &lt;h5&gt;This is a heading level 5&lt;/h5&gt; <br> 
+          &lt;h6&gt;This is a heading level 6&lt;/h6&gt; <br> 
+        </code>
+
+      <li><h3>List Item</h3></li>
+
+      <p>This identifies a list item, or one element of a list.</p>
+        <code>           
+                &lt;li>Corn&lt;/li>     
+        </code>
+      
+      <li><h3>Unordered List</h3></li>
+      <p>this element identifies that an <em>unordered list</em> is going to follow. A list is made up of any number of items.</p>
+        <code>           
+            &lt;ul&gt;<br>
+                &lt;li>Corn&lt;/li><br>
+                &lt;li>Tomatoes&lt;/li><br>
+                &lt;li>Beans&lt;/li><br>
+                &lt;li>Onions&lt;/li><br>
+                &lt;li>Garlic&lt;/li><br>
+            &lt;/ul><br>
+        </code>
+     <li><h3>Ordered List</h3></li>
+
+     <p>this element identifies that an <em>ordered list</em> is going to follow. this type of list will automatically add an ascending number to each element in the list</p>
+        <code>           
+            &lt;ol&gt;<br>
+                &lt;li>Add corn&lt;/li><br>
+                &lt;li>Dice and add tomatoes&lt;/li><br>
+                &lt;li>Add beans&lt;/li><br>
+                &lt;li>Chop and sautee onions&lt;/li><br>
+                &lt;li>Mince and add garlic&lt;/li><br>
+            &lt;/ol><br>
+        </code>
+
+      <li><h3>Link</h3></li>
+        <code>           
+            &lt;a href="https://www.google.com">Google&lt;/a>               
+        </code>
+      <li><h3>Text Formatting (emphasis and strong)</h3></li>
+
+      <p>Strong and emphasis identify a selection of text that has a <em>strong</em> importance you can change your JAWS settings to read these differently.</p>
+        <code>           
+            &lt;em>Very Important&lt;/em><br>
+            &lt;strong>Important&lt;/strong>                
+        </code>
+      <li><h3>Commenting Code</h3></li>
+      <p>You can leave notes for yourself in HTML that the browser will ignore, and won't be rendered on the page</p>
+        <code>           
+            &lt;!-- This comment is hidden from the browser --><br>             
+        </code>
+
+
+<li><h3>Audio</h3></li>
+<pre>
+Defines sound content
+&lt;audio controls>
+  &lt;source src="horse.ogg" type="audio/ogg">
+  &lt;source src="horse.mp3" type="audio/mpeg">
+&lt;/audio>
+</pre>
+
+<li><h3>Line Break</h3></li>
+<p>the br tag defines a single line break and has no closing tag</p>
+<pre>&lt;br></pre>
+
+<li><h3>Button</h3> </li>
+
+<p>The button element defines a clickable button.</p>
+
+<pre>&lt;button onclick="alert('button activated')">native HTML&lt;/button></pre>
+
+
+<li><h3>Images</h3></li>
+
+<p>Images can be rendered using links to URL images, or image files. They do not need a closing tag and should always include an alt attribute.</p>
+<pre>&lt;img src="smiley.gif" alt="Smiley face" height="42" width="42"></pre>
+
+
+
+<li><h3>Forms</h3></li>
+<p>Forms define HTML forms for user input. Labels are used in forms to define a label for an input element. The input tag specifies an input field where the user can enter data. The input varies depending on the type attribute that it is given. 
+<ul>
+<li><p>The example below defines a radio button form that allows users to select their gender:</p></li>
+<pre>
+&lt;form action="/action_page.php">
+  &lt;label for="male">Male&lt;/label>
+  &lt;input type="radio" name="gender" id="male" value="male">&lt;br>
+  &lt;label for="female">Female&lt;/label>
+  &lt;input type="radio" name="gender" id="female" value="female">&lt;br>
+  &lt;label for="other">Other</label>
+  &lt;input type="radio" name="gender" id="other" value="other">&lt;br>&lt;br>
+  &lt;input type="submit" value="Submit">
+&lt;/form>
+</pre>
+<li><p>The example below defines a text field form that allows users to type their first and last names.</p></li>
+<pre>&lt;form action="/action_page.php">
+  First name: &lt;input type="text" name="fname">&lt;br>
+  Last name: &lt;input type="text" name="lname">&lt;br>
+  &lt;input type="submit" value="Submit">
+&lt;/form>
+
+</pre>
+</ul>
+
+<li><h3>dropdowns menu</h3></li>
+<p> a dropdown list allows users to select from options in a drop-down focusable list
+<pre>
+&lt;select>
+  &lt;option value="volvo">Volvo&lt;/option>
+  &lt;option value="saab">Saab&lt;/option>
+  &lt;option value="opel">Opel&lt;/option>
+  &lt;option value="audi">Audi&lt;/option>
+&lt;/select>
+</pre>
+
+<li><h3>Tables</h3></li>
+<p>The &lt;table> tag defines an HTML table. An HTML table consists of the &lt;table> tag and one or more &lt;tr>, &lt;th>, and &lt;td> tags. The &lt;tr> element defines a table row, the &lt;th> element defines a table header, and the &lt;td> element defines a table cell.</p>
+<pre>
+&lt;table>
+  &lt;tr>
+    &lt;th>Month&lt;/th>
+    &lt;th>Savings&lt;/th>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>January&lt;/td>
+    &lt;td>$100&lt;/td>
+  &lt;/tr>
+&lt;/table>
+</pre>
+
+<li><h3>Span</h3></li>
+<p>The span tags are used to group inline-elements in a document and provides a way to add a hook to a part of a text or a part of a document.</p>
+<pre>
+&lt;p>My mother has &lt;span style="color:blue">blue&lt;/span> eyes.&lt;/p>
+</pre>
+
+
+<li><h3>Divs</h3></li>
+<p>The div tag defines a division or a section in an HTML document. The div tag is used to group block-elements to format them with CSS.</p>
+<pre>
+&lt;div style="color:#0000FF">
+  &lt;h3>This is a heading</h3>
+  &lt;p>This is a paragraph.</p>
+&lt;/div>
+</pre>
+
+
+<li><h3>Script Tags </h3><li>
+<p>Script tags define a client-side script. You can use these to add javascript right in your html file.</p> 
+<pre>
+&lt;script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+&lt;/script>
+&lt;/pre>
+</pre>
+
+
+<li><h3>Style</h3></li>
+<p> Style tags define the style information for a document and allow you to add CSS changes right in your html file.</p>
+<pre>
+&lt;html>
+&lt;head>
+&lt;title>my cool page&lt;/title>
+&lt;style>
+h1 {color:red;}
+p {color:blue;}
+&lt;/style>
+&lt;/head>
+</pre>
+</ol>
+
+<a href="https://www.w3schools.com/html/html_elements.asp">More Elements</a>
+
+
+<h2>Semantic Elements</h2>
+
+<p>Semantic Elements give meaning to the document. Below are some common examples:</p>
+<ol>
+
+<li><h3>Navigation</h3></li>
+<p>The navigation region defines navigation links. This is a common semantic element that is used to organize and present all of the different pages on a site. It usually goes at the top of a web page and is consistent and present on all pages of the site. </p>
+<pre>
+&lt;nav role="navigation">
+  &lt;a href="about.html">About&lt;/a> 
+  &lt;a href="contact.html">Contact&lt;/a> 
+  &lt;a href="faq.html">Frequently Asked Questions&lt;/a> 
+&lt;/nav>
+</pre>
+
+<li><h3>Section</h3> </li> 
+<p>Defines different sections on a site.</p>
+<pre>
+&lt;section>
+  &lt;h1>WWF<&lt;/h1>
+  &lt;p>The World Wide Fund for Nature (WWF) is....&lt;/p>
+&lt;/section>
+</pre>
+
+<li><h3>Article</h3></li>
+<p>The article tag defines an article. The &lt;article> element specifies independent, self-contained content.
+An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.
+Examples of where an &lt;article> element can be used:
+<ul>
+<li>Newspaper article</li>  
+<li>Forum post</li>
+<li>Blog post</li>
+</ul></p>
+<pre>
+&lt;article>
+  &lt;h1>What Does the World Wildlife Fund (WWF) Do?&lt;/h1>
+  &lt;p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.&lt;/p>
+&lt;/article>
+</pre>
+
+<li><h3>Footer</h3></li>
+<p>Defines a footer for a document or section. The footer goes at the bottom of an html page and often contains authoring information and links that are secondary to the navigation.</p>
+<pre>
+&lt;footer>
+  &lt;p>Posted by: Claire Volpe&lt;/p>
+  &lt;p>Contact information: 
+  &lt;a href="mailto:claire@example.com">claire@example.com&lt;/a>.&lt;/p>
+&lt;/footer>
+</pre>
+</ol>
+
+<a href="https://www.w3schools.com/html/html5_semantic_elements.asp">More Info About Semantic Elements</a>
+<br>
+<br>
+
+
+<a href="additional_resources.html">Additional Resources</a><br><br>
+
+
+</body>
+</html>
+
+
+
+
